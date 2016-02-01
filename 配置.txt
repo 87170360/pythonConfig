@@ -1,0 +1,9 @@
+目的： 使用python 实现远程操作linux执行命令，使用py2exe把实现打包成exe，使得没有相关配置的windows也可以执行
+
+安装步骤:
+1.安装python 2.7 win32版本, 注意设置path环境变量
+2.安装pycrypto-2.6.win32-py2.7.exe, 此库为paramiko-1.16.0库的依赖库
+3.安装paramiko-1.16.0库, 本实现需要用到它封装的sftp和ssl功能，在命令行下切换到paramiko-1.16.0目录下
+执行python setup.py install
+4.在python的目录C:\Python27\Lib\site-packages下, 解压paramiko-1.16.0-py2.7.egg得到paramiko文件夹，并放置在此
+5.安装ssh和VCForPython27.msi

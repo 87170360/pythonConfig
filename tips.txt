@@ -1,0 +1,11 @@
+setup.py 
+配置打包选项，在icludes中配置使用到的扩展库, data_files配置需要拷贝的文件
+
+distribute.py
+处理过程： 1.加载配置文件  2.上传执行脚本和安装包 3.调用执行脚本
+
+主要知识点
+远端命令执行 paramiko.SSHClient()
+上传和下载文件 paramiko.Transport((hostname,port))
+运行路径获取 os.path.abspath(os.path.dirname("__file__"))
+配置文件加载 ConfigParser.ConfigParser()
